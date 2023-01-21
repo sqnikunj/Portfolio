@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikunj Dudhat Portfoilio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfoilio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Nikunj Dudhat</span><br> from India </h1>
+        </div>
+    </div>
+</div>
+
+<!-- --------------About--------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>"Meet  Nikunj, a highly skilled and creative UI/UX designer with a passion for creating intuitive and visually appealing digital experiences.  10 years of experience in the industry,  Nikunj has honed their skills in design principles, user research and prototyping. Nikunj has a proven track record of delivering exceptional results in fast-paced and high-pressure environments."
+                   
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                    <p class="tab-links" onclick="opentab('education')" >Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br> Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br> Web App Development</li>
+                        <li><span>App Development</span><br> Building Android/ios Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022-Current</span><br> Skillqode</li>
+                        <li><span>2017-2022</span><br> Tapovan</li>
+                        <li><span>2016-2017</span><br> Essar</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017</span><br> ME Machine Design</li>
+                        <li><span>2015</span><br> BE Mechanical</li>
+                        <li><span>2011</span><br> HSC</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+    }
+
+</script>
+    
+</body>
+</html>
